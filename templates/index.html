@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Morse Machine</title>
+    <link
+      rel="stylesheet"
+      href="static/style.css"
+    />
+</head>
+<body>
+  <section class="explanation">
+    <h2>Welcome to Morse Code Converter Machine!</h2>
+    <p>Here you can enter a piece of text to convert it into Morse code, or enter a piece of Morse code to decrypt it into plain text.</p>
+  </section>
+  <section class="card">
+    <form action="{{url_for('home')}}" method="POST">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            <div>{{ form.Input.label(class_='label') }} {{ form.Input(class_='form-control') }}</div>
+            <div>{{ form.Type.label(class_='label') }} {{ form.Type(class_='form-control') }}</div>
+            <div>{{ form.submit(class_='submit-btn') }}</div>
+        </div>
+    </form>
+  </section>
+  <section class="output">
+      <pre>{{ result }}</pre>
+  </section>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.explanation {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group  label {
+  margin-bottom: 0.5rem; /* label 与输入框之间的间距 */
+  display: block; /* 确保 label 占一整行 */
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* 每个表单项之间的底部间距 */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.output {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    white-space: pre-wrap; /* 保持原样显示换行和空格 */
+    font-family: monospace;
+    color: #333;
+}
+
+.output pre {
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.output::after {
+    content: "";
+    display: block;
+    clear: both;
+    text-align: center;
+}
+
+.submit-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #000000; /* 黑色背景 */
+    color: #ffffff; /* 白色文本 */
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 添加颜色变化过渡 */
+}
+
+.submit-btn:hover {
+    background-color: #ffffff; /* 悬停时白色背景 */
+    color: #000000; /* 悬停时黑色文本 */
+    border: 2px solid #000000; /* 悬停时增加黑色边框 */
+}
